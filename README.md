@@ -32,12 +32,13 @@ Una plataforma de registro e inventario orientada a la comunidad de jugadores de
 El proyecto se construye paso a paso mediante ramas de características (_feature branches_):
 
 1. [x] Estructura inicial y configuración del repositorio.
-2. [ ] Configuración del servidor nativo en Node.js y manejo de rutas base.
-3. [ ] Implementación de lectura(`GET`).
-4. [ ] Creación de datos (`POST`)
-5. [ ] Implementar eliminar usuario (`DELETE`)
-6. [ ] Implementación de actualización(`PUT`).
-7. [ ] Validaciones tanto en cliente como en servidor.
+2. [x] Configuración del servidor nativo en Node.js.
+3. [x] Creación del archivo `JSON` y manejo de lectura con el módulo `fs`.
+4. [ ] Implementación de lectura(`GET`).
+5. [ ] Creación de datos (`POST`)
+6. [ ] Implementar eliminar usuario (`DELETE`)
+7. [ ] Implementación de actualización(`PUT`).
+8. [ ] Validaciones tanto en cliente como en servidor.
 
 ---
 
