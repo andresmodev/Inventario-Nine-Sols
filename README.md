@@ -13,6 +13,12 @@ El propósito principal de este proyecto es afianzar las bases de la ingeniería
 
 ---
 
+## 📷 Vista previa
+
+![Vista previa de la interfaz](./assets/render-users-01.png)
+
+---
+
 ## 🎮 Contexto de la Aplicación
 
 Una plataforma de registro e inventario orientada a la comunidad de jugadores de **Nine Sols**, permitiendo gestionar perfiles o registros de usuario de forma persistente y controlada desde el servidor.
@@ -34,12 +40,16 @@ El proyecto se construye paso a paso mediante ramas de características (_featur
 1. [x] Estructura inicial y configuración del repositorio.
 2. [x] Configuración del servidor nativo en Node.js.
 3. [x] Creación del archivo `JSON` y manejo de lectura con el módulo `fs`.
-4. [ ] Implementación de lectura(`GET`).
-5. [ ] Creación de datos (`POST`)
-6. [ ] Implementar eliminar usuario (`DELETE`)
-7. [ ] Implementación de actualización(`PUT`).
-8. [ ] Validaciones tanto en cliente como en servidor.
+4. [x] Implementación de lectura(`GET`).
+5. [x] Html para mostrar los datos desde el backend.
+6. [x] `fetch` funcional desde el frontend para comunicarse con el backend.
+7. [x] Renderizado e inicialización de datos correcto.
+8. [ ] Módulo para crear un nuevo usuario.
+9. [ ] Creación de datos (`POST`).
+10. [ ] Implementar eliminar usuario (`DELETE`).
+11. [ ] Implementación de actualización(`PUT`).
+12. [ ] Validaciones tanto en cliente como en servidor.
 
 ---
 
-## Version 0.1.0
+## Version 0.2.0
