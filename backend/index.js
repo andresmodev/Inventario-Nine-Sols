@@ -21,7 +21,8 @@ const server = http.createServer(async (request, response) => {
     const { method, url } = request;
 
     // cabeceras CORS para permitir la conexión cliente-servidor con el metodo POST
-    // las cabeceras las coloco una vez sepa que el metodo GET funciona
+    response.setHeader("Access-Control-Allow-Origin", "*");
+    // investigar bien para que sirven las otras dos cabeceras METHODS y HEADERS
 
     // cabecera global para especificar el tipo de contenido y el idioma que quiero que node traduzca
     response.setHeader("Content-Type", "application/json; charset=UTF-8");
