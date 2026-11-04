@@ -15,7 +15,8 @@ El propósito principal de este proyecto es afianzar las bases de la ingeniería
 
 ## 📷 Vista previa
 
-![Vista previa de la interfaz](./assets/render-users-01.png)
+![Vista previa de la interfaz](./assets/render-users-02.png)
+![Formulario para crear un nuevo usuario](./assets/form-create.png)
 
 ---
 
@@ -44,11 +45,12 @@ El proyecto se construye paso a paso mediante ramas de características (_featur
 5. [x] Html para mostrar los datos desde el backend.
 6. [x] `fetch` funcional desde el frontend para comunicarse con el backend.
 7. [x] Renderizado e inicialización de datos correcto.
-8. [ ] Módulo para crear un nuevo usuario.
-9. [ ] Creación de datos (`POST`).
-10. [ ] Implementar eliminar usuario (`DELETE`).
-11. [ ] Implementación de actualización(`PUT`).
-12. [ ] Validaciones tanto en cliente como en servidor.
+8. [x] Módulo para crear un nuevo usuario.
+9. [x] Estilos pensados en una buena experiencia de usuario.
+10. [ ] Creación de datos (`POST`).
+11. [ ] Implementar eliminar usuario (`DELETE`).
+12. [ ] Implementación de actualización(`PUT`).
+13. [ ] Validaciones tanto en cliente como en servidor.
 
 ---
 
