@@ -1,26 +1,98 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usuarios Nine Sols</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <h1 class="title">Inventario Nine Sols</h1>
+    <header class="site-header">
+      <h1 class="title">Inventario Nine Sols</h1>
 
-    <table class="data-container">
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>Nombre</th>
-          <th>Usuario</th>
-          <th>Correo</th>
-          <th>Edad</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody class="data-content"></tbody>
-    </table>
+      <button type="button" class="btn btn-modal-open">Nuevo Usuario</button>
+    </header>
+
+    <div class="table-wrapper">
+      <table class="data-container">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Usuario</th>
+            <th>Correo</th>
+            <th>Edad</th>
+            <th>Activo</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody class="data-content"></tbody>
+      </table>
+    </div>
+
+    <!-- Modal de creación de usuario -->
+    <dialog class="modal">
+      <div class="modal-content">
+        <h2>Nuevo Usuario</h2>
+
+        <form class="form form-create-user">
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ejemplo: Andrés Monoya"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="userName">Usuario:</label>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="Ejemplo: andres123$"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="andres123montoya@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="age">Edad:</label>
+            <input type="number" name="age" id="age" required min="12" max="90" />
+          </div>
+
+          <fieldset class="form-fieldset">
+            <legend>Usuario activo o inactivo</legend>
+
+            <div class="radio-gruop">
+              <input type="radio" name="isActive" id="active" value="active" checked />
+              <label for="active">Activo</label>
+
+              <input type="radio" name="isActive" id="inactive" value="inactive" />
+              <label for="inactive">Inactivo</label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-cancel">Cancelar</button>
+            <button type="submit" class="btn btn-create-user">Crear</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
 
     <script src="main.js" type="module"></script>
   </body>

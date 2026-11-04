@@ -1,0 +1,91 @@
+/* =========================
+   TABLA GENERAL
+========================= */
+
+.data-container {
+  width: min(100%, var(--container-width));
+  min-width: 760px;
+
+  margin: 0 auto;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+/* Encabezados */
+
+.data-container thead {
+  background-color: var(--color-surface-secondary);
+}
+
+.data-container th {
+  padding: var(--spacing-lg);
+
+  color: var(--color-subtitle);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Celdas */
+
+.data-container td {
+  padding: var(--spacing-lg);
+
+  color: var(--color-text);
+  font-size: 0.9rem;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Filas */
+
+.data-container tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.data-container tbody tr:hover {
+  background-color: var(--color-bg);
+}
+
+.data-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Primera columna: identificador */
+
+.data-container td:first-child {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+/* Columna de acciones */
+
+.data-container td:last-child {
+  white-space: nowrap;
+}
+
+.data-container td:last-child .btn + .btn {
+  margin-left: var(--spacing-sm);
+}
+
+/* Responsive: desplazamiento horizontal */
+
+.table-wrapper {
+  width: min(100%, var(--container-width));
+  margin: 0 auto;
+
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+}

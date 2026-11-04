@@ -1,0 +1,119 @@
+/* =========================
+   BOTÓN BASE
+========================= */
+
+.btn {
+  min-height: var(--button-height);
+  padding: 0 var(--spacing-xl);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+/* Estados generales */
+
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary-light);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   MODIFICADORES
+========================= */
+
+/* Abrir modal de creación */
+
+.btn-modal-open {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn-modal-open:hover {
+  background-color: var(--color-primary-hover);
+  filter: none;
+}
+
+/* Crear usuario */
+
+.btn-create-user {
+  background-color: var(--color-success);
+  color: #ffffff;
+}
+
+.btn-create-user:hover {
+  background-color: var(--color-success-hover);
+  filter: none;
+}
+
+/* Cancelar */
+
+.btn-cancel {
+  background-color: var(--color-secondary);
+  color: var(--color-heading);
+}
+
+.btn-cancel:hover {
+  background-color: var(--color-secondary-hover);
+  filter: none;
+}
+
+/* Editar */
+
+.btn-edit {
+  background-color: var(--color-warning);
+  color: #ffffff;
+}
+
+.btn-edit:hover {
+  background-color: var(--color-warning-hover);
+  filter: none;
+}
+
+/* Eliminar */
+
+.btn-delete {
+  background-color: var(--color-danger);
+  color: #ffffff;
+}
+
+.btn-delete:hover {
+  background-color: var(--color-danger-hover);
+  filter: none;
+}
+
+/* Actualizar usuario */
+
+.btn-update-user {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn-update-user:hover {
+  background-color: var(--color-primary-hover);
+  filter: none;
+}
