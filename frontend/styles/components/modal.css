@@ -1,0 +1,87 @@
+/* =========================
+   DIALOG
+========================= */
+
+dialog.modal {
+  width: calc(100% - var(--spacing-2xl));
+  max-width: var(--modal-width);
+  max-height: calc(100dvh - var(--spacing-2xl));
+
+  margin: auto;
+  padding: 0;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  box-shadow: var(--shadow-modal);
+
+  overflow-y: auto;
+}
+
+/* Animación al abrir */
+
+dialog.modal[open] {
+  animation: modal-enter var(--transition-normal);
+}
+
+/* Fondo oscuro */
+
+dialog.modal::backdrop {
+  background-color: var(--color-overlay);
+  backdrop-filter: blur(3px);
+}
+
+/* =========================
+   CONTENIDO DEL MODAL
+========================= */
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+
+  padding: var(--spacing-2xl);
+}
+
+.modal-content h2 {
+  color: var(--color-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* =========================
+   ANIMACIÓN
+========================= */
+
+@keyframes modal-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  dialog.modal {
+    width: calc(100% - var(--spacing-lg));
+    max-height: calc(100dvh - var(--spacing-lg));
+  }
+
+  .modal-content {
+    padding: var(--spacing-xl);
+    gap: var(--spacing-lg);
+  }
+
+  .modal-content h2 {
+    font-size: 1.35rem;
+  }
+}

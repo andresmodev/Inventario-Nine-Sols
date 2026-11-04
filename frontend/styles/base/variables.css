@@ -1,0 +1,100 @@
+:root {
+  /* =========================
+       COLORES GENERALES
+    ========================= */
+
+  --color-bg: #f3f6fb;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f8fafc;
+
+  /* TEXTOS */
+
+  --color-heading: #172033;
+  --color-subtitle: #475569;
+  --color-text: #334155;
+  --color-text-muted: #64748b;
+  --color-placeholder: #94a3b8;
+
+  /* BORDES */
+
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* =========================
+       COLOR PRINCIPAL
+    ========================= */
+
+  --color-primary: #315efb;
+  --color-primary-hover: #244ce0;
+  --color-primary-light: #eef2ff;
+
+  /* =========================
+       ACCIONES
+    ========================= */
+
+  --color-success: #0f9f75;
+  --color-success-hover: #0b805f;
+
+  --color-danger: #dc4c4c;
+  --color-danger-hover: #c63737;
+
+  --color-warning: #d97706;
+  --color-warning-hover: #b85f05;
+
+  --color-secondary: #e8edf5;
+  --color-secondary-hover: #dce3ed;
+
+  /* =========================
+       MODALES
+    ========================= */
+
+  --color-overlay: rgba(15, 23, 42, 0.65);
+
+  /* =========================
+       SOMBRAS
+    ========================= */
+
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.14);
+  --shadow-modal: 0 20px 60px rgba(15, 23, 42, 0.2);
+
+  /* =========================
+       BORDER RADIUS
+    ========================= */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 999px;
+
+  /* =========================
+       ESPACIADOS
+    ========================= */
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 64px;
+
+  /* =========================
+       TRANSICIONES
+    ========================= */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* =========================
+       DIMENSIONES
+    ========================= */
+
+  --container-width: 1200px;
+  --modal-width: 560px;
+  --input-height: 46px;
+  --button-height: 44px;
+}
