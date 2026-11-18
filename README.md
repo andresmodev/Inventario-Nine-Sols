@@ -47,10 +47,16 @@ El proyecto se construye paso a paso mediante ramas de características (_featur
 7. [x] Renderizado e inicialización de datos correcto.
 8. [x] Módulo para crear un nuevo usuario.
 9. [x] Estilos pensados en una buena experiencia de usuario.
-10. [ ] Creación de datos (`POST`).
-11. [ ] Implementar eliminar usuario (`DELETE`).
-12. [ ] Implementación de actualización(`PUT`).
-13. [ ] Validaciones tanto en cliente como en servidor.
+10. [x] En el backend programar la ruta `POST`.
+11. [x] Agregar nuevas `CORS`.
+12. [x] Implementar lectura del cuerpo de la petición.
+13. [x] Modificar el _JSON_ con el módulo `node:fs/promises` y `writeFile()` de node.
+14. [x] Validar los datos que vienen desde el cliente.
+15. [x] Probar su correcto funcionamiento con _Thunder Client_.
+16. [ ] Creación de datos en el cliente con (`POST`).
+17. [ ] Implementar eliminar usuario (`DELETE`).
+18. [ ] Implementación de actualización(`PUT`).
+19. [ ] Validaciones tanto en cliente como en servidor.
 
 ---
 

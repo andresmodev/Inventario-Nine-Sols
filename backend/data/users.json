@@ -78,5 +78,13 @@
     "email": "eyjude05@example.com",
     "age": 21,
     "isActive": true
+  },
+  {
+    "id": "9aaf9e0c-f6c1-497a-904f-731a56b51530",
+    "name": "Kiara Montoya",
+    "userName": "kiara123M",
+    "email": "holasoykiara@example.com",
+    "age": 16,
+    "isActive": true
   }
 ]
