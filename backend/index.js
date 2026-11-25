@@ -1,8 +1,10 @@
 import http from "http";
-import { readUsersFile, addUserToFile } from "./services/fileService.js";
+import { readUsersFile, addUserToFile, deleteUserFromFile } from "./services/fileService.js";
 import { getRequestBody } from "./utils/requestHelpers.js";
 
-const PORT = 3000;
+const PORT = 3000; // puerto donde se escucha el servidor
+const USERS_FILE_PATH = "./data/users.json"; // ruta del archivo de datos
+const USERS_ENDPOINT_PATH = "/api/users/"; // endpoint de la url
 
 const server = http.createServer(async (request, response) => {
   try {
@@ -24,15 +26,15 @@ const server = http.createServer(async (request, response) => {
     response.setHeader("Content-Type", "application/json; charset=UTF-8");
 
     // Obtener los datos y enviarlos como JSON al cliente
-    if (method === "GET" && url === "/api/users/") {
-      const dataUsers = await readUsersFile("./data/users.json");
+    if (method === "GET" && url === USERS_ENDPOINT_PATH) {
+      const dataUsers = await readUsersFile(USERS_FILE_PATH);
       response.statusCode = 200;
       response.end(JSON.stringify(dataUsers));
       return;
     }
 
     // recibir las partes del cliente, validar los datos, asignar ID y enviar el nuevo objeto al archivo JSON
-    if (method === "POST" && url === "/api/users/") {
+    if (method === "POST" && url === USERS_ENDPOINT_PATH) {
       let requestBody = await getRequestBody(request);
       let userData; // parsear el JSON
 
@@ -113,12 +115,37 @@ const server = http.createServer(async (request, response) => {
         isActive: userData.isActive,
       };
 
-      await addUserToFile("./data/users.json", newUser);
+      await addUserToFile(USERS_FILE_PATH, newUser);
 
       // responder indicando que el usuario fue creado correctamente
       response.statusCode = 201;
       response.end(JSON.stringify(newUser));
       return;
+    }
+
+    // extraer el ID de la URL, eliminar el usuario del archivo JSON y responder según el resultado
+    if (method === "DELETE" && url.startsWith(USERS_ENDPOINT_PATH)) {
+      const urlParts = url.split("/");
+
+      if (urlParts.length !== 4 || !urlParts.at(-1)) {
+        response.statusCode = 400;
+        response.end(JSON.stringify({ message: "ID de usuario inválido o faltante" }));
+        return;
+      }
+
+      const id = urlParts.at(-1);
+
+      const isDeleted = await deleteUserFromFile(USERS_FILE_PATH, id);
+
+      if (!isDeleted) {
+        response.statusCode = 404;
+        response.end(JSON.stringify({ message: "Usuario no encontrado" }));
+        return;
+      } else {
+        response.statusCode = 200;
+        response.end(JSON.stringify({ message: "Usuario eliminado con éxito" }));
+        return;
+      }
     }
 
     response.statusCode = 404;
