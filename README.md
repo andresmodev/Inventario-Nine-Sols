@@ -53,11 +53,15 @@ El proyecto se construye paso a paso mediante ramas de características (_featur
 13. [x] Modificar el _JSON_ con el módulo `node:fs/promises` y `writeFile()` de node.
 14. [x] Validar los datos que vienen desde el cliente.
 15. [x] Probar su correcto funcionamiento con _Thunder Client_.
-16. [ ] Creación de datos en el cliente con (`POST`).
-17. [ ] Implementar eliminar usuario (`DELETE`).
-18. [ ] Implementación de actualización(`PUT`).
-19. [ ] Validaciones tanto en cliente como en servidor.
+16. [x] Validaciones del lado del cliente funcional.
+17. [x] Convertir datos de los inputs a los tipos de datos necesarios.
+18. [x] Función encargada de hacer la petición (`POST`).
+19. [x] Volver a pintar la tabla mostrando el nuevo usuario, esto por medio de una callback.
+20. [ ] En una versión más adelante, agregar _*span*_ y manejar errores visualmente.
+21. [ ] Implementar eliminar usuario (`DELETE`).
+22. [ ] Implementación de actualización(`PUT`).
+23. [ ] Validaciones tanto en cliente como en servidor.
 
 ---
 
-## Version 0.2.0
+## Version 0.3.0
