@@ -58,9 +58,11 @@ El proyecto se construye paso a paso mediante ramas de características (_featur
 18. [x] Función encargada de hacer la petición (`POST`).
 19. [x] Volver a pintar la tabla mostrando el nuevo usuario, esto por medio de una callback.
 20. [ ] En una versión más adelante, agregar _*span*_ y manejar errores visualmente.
-21. [ ] Implementar eliminar usuario (`DELETE`).
-22. [ ] Implementación de actualización(`PUT`).
-23. [ ] Validaciones tanto en cliente como en servidor.
+21. [x] Validar el metodo (`DELETE`), extraer el `id` y eliminar el usuario.
+22. [x] Crear una función en _fileServices.js_ que busque por el `id` y filtre un nuevo arreglo y sobreescriba los datos `JSON`.
+23. [x] Probar quue el devuelva el código correcto y que si elimine el usuario con _Thunder Client_.
+24. [ ] Implementación de actualización(`PUT`).
+25. [ ] Validaciones tanto en cliente como en servidor.
 
 ---
 
