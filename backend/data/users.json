@@ -86,5 +86,45 @@
     "email": "holasoykiara@example.com",
     "age": 16,
     "isActive": true
+  },
+  {
+    "id": "e30a5f3a-3a89-4145-b919-c288ba192e9e",
+    "name": "Ejemplo 1",
+    "userName": "ejemplo123",
+    "email": "ejemplo123@ejemplo.com",
+    "age": 21,
+    "isActive": false
+  },
+  {
+    "id": "2001b6a0-0eef-4c56-8692-4e830fbd7cb8",
+    "name": "Ejemplo 2",
+    "userName": "ejemplo456",
+    "email": "ejemplo456@ejemplo.com",
+    "age": 15,
+    "isActive": true
+  },
+  {
+    "id": "e1a450b3-3553-4f09-8295-4876bdda10c4",
+    "name": "ej",
+    "userName": "andres123$",
+    "email": "andres123@fdd.uy",
+    "age": 12,
+    "isActive": true
+  },
+  {
+    "id": "1b07f724-dc21-4ca0-bde7-dfc10d9e50cc",
+    "name": "Ejemplo 4",
+    "userName": "3w",
+    "email": "andres123@fdd.com",
+    "age": 34,
+    "isActive": false
+  },
+  {
+    "id": "4883e82b-e9f8-4f5d-bae9-dcb0d6fff314",
+    "name": "Ejemplo 5",
+    "userName": "ejemplo456",
+    "email": "andres123@example.com",
+    "age": 15,
+    "isActive": false
   }
 ]
